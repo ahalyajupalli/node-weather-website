@@ -1,0 +1,84 @@
+body {
+    color: #333333;
+    font-family: 'Arial', sans-serif; /* Ensures sans-serif is the fallback */
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Flexbox is used for sticky footer */
+    line-height: 1.6; /* Improve readability with more line height */
+    background-color: #f7f7f7; /* Light background color for the whole page */
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+    text-align: center; /* Center the text in the footer */
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    text-align: center; /* Center the content of the header */
+}
+
+h1 {
+    font-size: 2.5em; /* Use em for scalable typography */
+    margin: 0.67em 0; /* Adjust margins to be proportional to the font size */
+}
+
+header a {
+    color: #4A90E2; /* Use a brighter color to indicate interactivity */
+    margin-right: 16px;
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding to make links finger-friendly on touch devices */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+header a:hover,
+header a:focus {
+    color: #2A4F7B; /* Darker color on hover/focus for feedback */
+    text-decoration: underline; /* Underline on hover/focus for clear interactivity */
+}
+
+.portrait {
+    width: 100%; /* Responsive image */
+    max-width: 250px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space under the image */
+    margin: 0 auto; /* Center the image */
+}
+
+input,
+button {
+    border: 1px solid #cccccc;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 4px; /* Rounded corners for aesthetic feel */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input {
+    width: 100%; /* Full-width input fields */
+    margin-bottom: 16px; /* Space between input and next elements */
+}
+
+button {
+    cursor: pointer;
+    background: #4A90E2; /* Brighter color for primary actions */
+    color: white;
+    margin-top: 8px; /* Add some margin at the top */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+button:hover,
+button:focus {
+    background: #357ABD; /* Darker shade for interactive states */
+}
