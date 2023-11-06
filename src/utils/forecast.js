@@ -9,7 +9,7 @@ const forecast=(latitude, longitude, callback)=>{
             callback('Unable to get the whether from the location :(', undefined)
         }
         else{
-            callback(undefined, data.current.weather_descriptions[0]+". It is currently "+data.current.temperature+" degrees out. It feels like "+ data.current.feelslike+" degrees out");
+            callback(undefined, data.current.weather_descriptions[0]+". It is currently "+data.current.temperature+" degrees out. It feels like "+ data.current.feelslike+" degrees out. Humdity is "+data.current.humidity);
         }
     })
     .catch(error=>{
